@@ -6,20 +6,20 @@
 // .then((response) => response.json())
 // .then((json) => console.log(json)); //id로 조회
 
-let isLoding = false;
+// let isLoding = false;
 
-if(isLoding === false) {
-    fetch("http://localhost:3000/posts", {
-        method: "POST",
-        body: JSON.stringify({
-            title: "리액트 공부 준비",
-            author: "곰돌이사육사"
-        }),
-        headers: {
-            "content-type" : "application/json; charset=UTF-8",
-        },
-    })
-    .then((rsp) => rsp.json())
-    .then((json) => console.log(json));
-    isLoding = true;
-}
+// if(isLoding === false) {
+//     fetch("http://localhost:3000/posts", {
+//         method: "POST",
+//         body: JSON.stringify({
+//             title: "리액트 공부 준비",
+//             author: "곰돌이사육사"
+//         }),
+//         headers: {
+//             "content-type" : "application/json; charset=UTF-8",
+//         },
+//     })
+//     .then((rsp) => rsp.json())
+//     .then((json) => console.log(json));
+//     isLoding = true;
+// }
